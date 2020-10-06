@@ -1,0 +1,159 @@
+<!DOCTYPE >
+<html>
+<head>
+	<link rel = "stylesheet"type = "text/css" href = "gallery.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Nosifer|Satisfy|Shojumaru|Permanent+Marker|Faster+One|Eater" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+	<title>
+		EVENT MANAGEMENT
+	</title>
+</head>
+<body>
+<header>
+    <div>
+   
+  <div class="header">
+    <nav class="navigation">
+      <a class="navbar-logo">Elegant events</a>
+      <div class="navbar-right">
+        <a href="main.html">Home</a>
+        <a href="gallery.html">Our work</a>
+        <a href="work.html">What we do</a>
+        <a href="aboutus.html">Who we are</a>
+        <a href="Contactus.html">Contact us</a>
+      </div>
+    </nav>
+  <div class="k">
+  <div class="mh" style="color: #000;">IMAGE GALLERY</div>
+</div>
+  <div class="bg">
+      <!-- <img src="wed1.jpg" style="width:1400px;height:600px"> -->
+    </div>
+  </div>
+</header>
+
+    <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="grid1.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid2.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid3.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid4.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid5.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid6.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid7.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid8.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid9.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid10.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid11.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid12.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid13.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid14.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid15.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid16.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid17.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid18.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid19.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid20.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid21.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid22.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid23.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid24.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="grid25.jpg" alt=""></div>
+        </div>
+    </div>
+    </div>
+ <footer>
+    <pre>
+    <h1 class="add" style="font-size: 20px;" style="left: 10px;">Posted by: Shriyal bhawsar</h1>
+    <p style="margin-top: -30px;" style="float: left;" style="font-size: 20px;">
+    1029,ward no. 37
+    near Digamber Jain School
+    Ramtekri,Mandsaur-458001
+    Madhya Pradesh(M.P)..</p>
+      <p style="font-size: 20px;">Contact information: <a href="mailto:managmentevent@example.com" style="color: white;">managmentevent@example.com</a></p>
+      <p style="margin-top: -30px;" style="font-size: 20px;">
+      Follow Us on--<img src="twitter-png-logo-logo-twitter-in-png-2500.png" height="30px" width="30px">&nbsp;<img src="fb.jpg" height="30px" width="30px"></p></pre>
+        </footer>
+<script>var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {        
+        item.classList.toggle('full');        
+    });
+});
+</script>
+</body>
+</html>

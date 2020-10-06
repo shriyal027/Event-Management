@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link rel = "stylesheet"type = "text/css" href = "form.css"/>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Neuton:400,700&display=swap" rel="stylesheet"> 
+      <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <title>
+    EVENT MANAGEMENT
+  </title>
+</head>
+<body>
+<div> 
+<header>
+  <div class="header">
+    <nav class="navigation">
+      <a class="navbar-logo">Elegant events</a>
+      <div class="navbar-right">
+        <a href="main.html">Home</a>
+        <a href="gallery.html">Our work</a>
+        <a href="aboutus.html">Who we are</a>
+        <a href="#">What we do</a>
+        <a href="Contactus.html">Contact us</a>
+      </div>
+    </nav>
+</div>
+</header>
+<div class="container">
+    <h1 id="title">Thanks for choosing us</h1>
+    <p id="description">Let's make all this easy,just you have to give some details of your program</p>
+   <form action="#" id="survey-form">
+       <div class="form-control"><label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name"  required>
+    </div>
+
+       <div class="form-control"><label id="email-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email so that we can share more things via email" required>
+    
+    </div>
+       <div class="form-control"><label for="number" id="number-label">How much do you want to spend for this event </label>
+        <input type="number" min="100" max= "100000" id="number" placeholder="Enter Amount according to the event">
+    </div>
+       <div class="form-control"><label>How many member's do you want to invite?</label>
+        <select id="dropdown" name="age" class="form-control" >
+            <option disabled selected value>Select members</option>
+            <option value="100">100</option>
+            <option value="500"> less than 500 </option>
+            <option value="1000">1000 or more than 1000</option></select>
+    
+    </div>
+<div class="form-control">
+    <label>What types of service you want?</label><br><br>
+       <input type="checkbox" id="item1" name="item1" value="Books/Magazines"><label class="check" for="item1">High class</label><br>
+       <input type="checkbox" id="item2"  name="item2" value="Food"><label class="check" for ="item2">middle class</label><br>
+       <input type="checkbox" id="item3"  name="item3" value="Computer Software"><label class="check" for ="item3">low budget</label><br>
+      </div>
+
+<div class="">
+       <label>what is the date of your program</label><br><br>
+<input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>  <label class= "input-radio" for="definitely">Share via mail</label><br>
+<input name="user-recommend" value="maybe" type= "radio" class="input-radio" >
+<label class= "input-radio" for="maybe">Share on call</label><br>
+</div>
+<div>
+          <label for = "suggestions" id="sujjestions">Add extra details</label>
+          <textarea name="textbox" id="" cols="30" rows=7 placeholder="Enter your suggestion here..."></textarea>
+     </div>
+       <div class="box">
+       <a class="button" href="#popup1" input type="submit" id="submit" value="Submit">SUBMIT</a>
+     <div id="popup1" class="overlay">
+      <div class="popup">
+    <h2>Woohhooo</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      Thanks for entering the details ,this details are very necessary to plan your event.As per the details you enter and your program date we will contact you soon within 3 days.
+</div>
+    </div>
+           </div>
+       </div>
+         </form>
+    </div>
+    </div>
+<footer>
+    <pre>
+    <h1 class="add" style="font-size: 20px;" style="left: 10px;">Posted by: Shriyal bhawsar</h1>
+    <p style="margin-top: -30px;" style="float: left;" style="font-size: 20px;">
+    1029,ward no. 37
+    near Digamber Jain School
+    Ramtekri,Mandsaur-458001
+    Madhya Pradesh(M.P)..</p>
+      <p style="font-size: 20px;">Contact information: <a href="mailto:managmentevent@example.com" style="color: white;">managmentevent@example.com</a></p>
+      <p style="margin-top: -30px;" style="font-size: 20px;">
+      Follow Us on--<img src="twitter-png-logo-logo-twitter-in-png-2500.png" height="30px" width="30px">&nbsp;<img src="fb.jpg" height="30px" width="30px"></p></pre>
+        </footer>
+    </body>
+    
+</html>
