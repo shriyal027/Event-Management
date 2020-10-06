@@ -1,0 +1,307 @@
+body
+{
+  background-image: url("workback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  /*height: 200px;*/
+  position: relative;
+}
+.a
+{ font-size: 25px;
+  left: 500px;
+  align-items: center;
+  position: relative;
+  top: 400px;
+   color: #fff;
+   height: 100px;
+   width: 400px;
+}
+.box button {
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color:blue;
+  background-color:white;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+  font-size: 25px;
+  text-decoration: none;
+  height: 35px;
+  font-size: 20px;
+}
+
+.box button:hover {
+  opacity: 0.7;
+}
+#dropdown{
+  size: 30px;
+  font-size: 15px;
+  height: 40px;
+  width: 40%;
+  font-family: bold;
+  border: 4px;
+
+}
+.hea{
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight:  100;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+ margin-top:443px;
+ 
+  font-family: 'Yeon Sung', cursive;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.b
+{
+  background-image:linear-gradient(to top, #ffcc99 0%, #ccccff 100%);
+  height: 600px;
+  left:-120px;
+  background-size: cover;
+  width: 100%;
+
+}
+
+.k{
+
+height: 110px;
+width:500px;
+opacity: 0.5;
+filter: alpha(opacity=50);
+position: absolute;
+top:250px;
+left:450px;
+align-items: center;
+}
+.k:hover
+{
+    opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-color:pink;
+}
+.mh{
+  font-size: 50px;
+  color: white;
+  position: relative;
+  left:15px;
+  text-align: center;
+}
+.navigation{
+  padding-top:30px;
+  padding-bottom:30px;
+  position:absolute;
+  top:-10px;
+  left: -7px;
+  width:100%;
+  height: 60px;
+  /*background-color: #fff;*/
+  opacity: 0.6;
+  background-image: linear-gradient(-55deg, rgba(50,45,55,1) 0%, rgba(101,96,106,1) 100%);
+  z-index:1;
+  font-size:16px;
+   font-style:bold;
+  margin-right: 0px;
+}
+
+.navbar-right{
+  float:right;
+ 
+}
+
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color:orange ;
+  font-family:georgia;
+  font-weight:900;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+  opacity: 0.8px;
+}
+.navbar-logo{
+  float: left;
+  height: 190px;
+  width: 380px;
+  font-family:georgia;
+  /*font-size:16px;*/
+  font-style:bold;
+  font-weight:1000;
+  color: orange;
+  font-size: 30px;
+}
+
+footer
+{position: relative;
+  top:600px;
+  margin:0;
+  width:106%;
+  padding:0;
+  background:black;
+  opacity: 0.8;
+  background-image: url("footer.jpg");
+  color: white;
+  display: block;
+  column-count: 2;
+  column-gap: normal;
+ background-size: cover;
+ left: -7px;
+
+
+}
+    #product {
+  background-color: #FEF5DF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.kontainer {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.ccontainer {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.kkontainer {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #FEF5DF;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: 'Playfair Display', serif;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px #FEF5DF;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all .5s;
+}
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.price .old {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.cart i {
+  font-size: 16px;
+}
+.cart span {
+  margin-left: 10px;
+}
+
+.container:hover .overlay,.kontainer:hover .overlay,
+.ccontainer:hover .overlay,.kkontainer:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay .head,.kontainer:hover .overlay .head,
+.ccontainer:hover .overlay .head,.kkontainer:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr ,.kontainer:hover .overlay hr,.ccontainer:hover .overlay hr ,.kkontainer:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price, .kontainer:hover .overlay .price ,.ccontainer:hover .overlay .price, .kkontainer:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart ,.kontainer:hover .overlay .cart,.ccontainer:hover .overlay .cart ,.kkontainer:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}

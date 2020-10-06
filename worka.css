@@ -1,0 +1,300 @@
+body{
+  background: #000;
+}
+.navigation{
+  padding-top:30px;
+  padding-bottom:30px;
+  position:absolute;
+  top:-10px;
+  left: -7px;
+  width:100%;
+  height: 60px;
+  /*background-color: #fff;*/
+  opacity: 0.6;
+  background-image: linear-gradient(-55deg, rgba(50,45,55,1) 0%, rgba(101,96,106,1) 100%);
+  z-index:1;
+  font-size:16px;
+   font-style:bold;
+  margin-right: 0px;
+}
+
+.navbar-right{
+  float:right;
+ 
+}
+
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color:orange ;
+  font-family:georgia;
+  font-weight:900;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+  opacity: 0.8px;
+}
+.navbar-logo{
+  float: left;
+  height: 190px;
+  width: 380px;
+  font-family:georgia;
+  /*font-size:16px;*/
+  font-style:bold;
+  font-weight:1000;
+  color: orange;
+  font-size: 30px;
+}
+
+footer
+{position: relative;
+  top:170px;
+  margin:0;
+  width:106%;
+  padding:0;
+  background:black;
+  opacity: 0.8;
+  background-image: url("footer.jpg");
+  color: white;
+  display: block;
+  column-count: 2;
+  column-gap: normal;
+ background-size: cover;
+ left: -7px;
+
+
+}
+    #product {
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top:150px;
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://www.weddingsonline.in/blog/wp-content/uploads/2017/10/22007479_1428442160607923_4374463494153948249_n.jpg");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.kontainer {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://i.pinimg.com/originals/ef/59/35/ef5935e56529e4331d409b8afb456821.jpg");
+  background-color: black;
+   background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.ccontainer {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://www.cavendishvenues.co.uk/wp-content/uploads/Cavendish_Venue_London_Auditorium.jpg");
+  background-color: black;
+   background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.kkontainer {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background: url("https://www.jigsawconferences.co.uk/storage/venue-gallery/cavendish-conference-centre-cavendish-venues_439bd93c8f143991afe6743cf125187b68a.jpg");
+   background-position: center;
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #FEF5DF;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: 'Playfair Display', serif;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px #FEF5DF;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all .5s;
+}
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.price .old {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.cart i {
+  font-size: 16px;
+}
+.cart span {
+  margin-left: 10px;
+}
+
+.container:hover .overlay,.kontainer:hover .overlay,
+.ccontainer:hover .overlay,.kkontainer:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay .head,.kontainer:hover .overlay .head,
+.ccontainer:hover .overlay .head,.kkontainer:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr ,.kontainer:hover .overlay hr,.ccontainer:hover .overlay hr ,.kkontainer:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price, .kontainer:hover .overlay .price ,.ccontainer:hover .overlay .price, .kkontainer:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart ,.kontainer:hover .overlay .cart,.ccontainer:hover .overlay .cart ,.kkontainer:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+.box{
+  position:absolute;
+  top:50%;
+  left:75%;
+
+  /*background:lightblue;*/
+  text-align:center;
+  box-sizing:border-box;
+  font-family:"Lato",Sans-serif;
+}
+
+.cox{
+  position:absolute;
+  top:120%;
+  left:75%;
+
+  /*background:lightblue;*/
+  text-align:center;
+  box-sizing:border-box;
+  font-family:"Lato",Sans-serif;
+}
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background:#fff;
+  color:#000;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #fff;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
